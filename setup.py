@@ -7,6 +7,8 @@ from subprocess import call
 
 from setuptools import Command, find_packages, setup
 
+from .skele import __version__
+
 
 this_dir = abspath(dirname(__file__))
 with open(join(this_dir, 'README.rst'), encoding='utf-8') as file:
@@ -32,7 +34,7 @@ class RunTests(Command):
 
 setup(
     name = 'skele',
-    version = '1.0.0',
+    version = __version__,
     description = 'A skeleton command line program in Python.',
     long_description = long_description,
     url = 'https://github.com/rdegges/skele-cli',
