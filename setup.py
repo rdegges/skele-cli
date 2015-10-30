@@ -7,7 +7,7 @@ from subprocess import call
 
 from setuptools import Command, find_packages, setup
 
-from .skele import __version__
+from skele import __version__
 
 
 this_dir = abspath(dirname(__file__))
