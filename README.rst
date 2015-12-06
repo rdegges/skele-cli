@@ -44,7 +44,7 @@ by running::
     $ twine upload dist/*
 
 This will build both a source tarball of your CLI tool, as well as a newer wheel
-build (*and this will, by default, run on all platforms*)
+build (*and this will, by default, run on all platforms*).
 
 The ``twine upload`` command (which requires you to install the `twine
 <https://pypi.python.org/pypi/twine>`_ tool) will then securely upload your
