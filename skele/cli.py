@@ -34,7 +34,7 @@ def main():
     # Here we'll try to dynamically match the command the user is trying to run
     # with a pre-defined command class we've already created.
     for k, v in options.iteritems():
-        if hasattr(commands, k):
+        if hasattr(commands, k) and v:
             module = getattr(commands, k)
             commands = getmembers(module, isclass)
             command = [command[1] for command in commands if command[0] != 'Base'][0]
